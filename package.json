@@ -1,11 +1,11 @@
 {
-  "name": "subdomain-uuid",
+  "name": "@gatsbylabs/short-uuid-subdomain",
   "files": [
     "dist/"
   ],
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:gatsbylabs/subdomain-uuid.git",
+  "repository": "git@github.com:gatsbylabs/short-uuid-subdomain.git",
   "author": "ec965 <22567131+ec965@users.noreply.github.com>",
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
