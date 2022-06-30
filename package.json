@@ -1,0 +1,34 @@
+{
+  "name": "subdomain-uuid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gatsbylabs/subdomain-uuid.git",
+  "author": "ec965 <22567131+ec965@users.noreply.github.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.1",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "tsup": "^6.1.2",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "typecheck": "tsc",
+    "lint": "eslint src/ --fix",
+    "fmt": "prettier --write .",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,json,yaml,yml}": "prettier --write",
+    "./src/**/*.{js,ts}": "eslint --fix"
+  },
+  "dependencies": {
+    "jest": "^28.1.2"
+  }
+}
