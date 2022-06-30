@@ -1,12 +1,16 @@
 {
   "name": "@gatsbylabs/short-uuid-subdomain",
+  "author": "Enoch Chau <enoch@gatsby.events>",
   "files": [
     "dist/"
   ],
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:gatsbylabs/short-uuid-subdomain.git",
-  "author": "ec965 <22567131+ec965@users.noreply.github.com>",
+  "homepage": "https://github.com/gatsbylabs/short-uuid-subdomain#readme",
+  "bugs": {
+    "url": "https://github.com/gatsbylabs/short-uuid-subdomain/issues"
+  },
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
   "devDependencies": {
@@ -32,7 +36,8 @@
     "lint": "eslint src/ --fix",
     "fmt": "prettier --write .",
     "test": "jest",
-    "build": "tsup src/* --dts"
+    "build": "tsup src/* --dts",
+    "prepublish": "yarn lint && yarn typecheck && yarn test && yarn build"
   },
   "lint-staged": {
     "*.{js,ts,md,json,yaml,yml}": "prettier --write",
