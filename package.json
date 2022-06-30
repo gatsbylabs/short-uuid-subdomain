@@ -42,5 +42,11 @@
     "base32-decode": "^1.0.0",
     "base32-encode": "~1.0.0",
     "short-uuid": "^4.2.0"
-  }
+  },
+  "keywords": [
+    "uuid",
+    "short-uuid",
+    "subdomain",
+    "RFC1123"
+  ]
 }
